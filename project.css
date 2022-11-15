@@ -1,0 +1,182 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+   font-family: 'Roboto', sans-serif;
+}
+body, html{
+    background-color: #000;
+    color: #fff;
+}
+
+a:hover{
+   text-decoration: none; 
+   color: #fff;
+}
+
+/*Título e imagem*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 220px;
+    left: 0;
+    top: 0;    
+    background: linear-gradient(180deg, #102347 0%, #181818 100%);
+}
+
+.titleLogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleLogo h1{
+    margin-top: 15px;
+}
+
+.titleLogo p a{
+    font-weight: 300;
+}
+
+/*Imagem*/
+.logo{
+    height: 235px;
+    height: 106px;
+}
+ 
+/*Área de dados dos clientes*/
+#cardContent{
+    padding: 40px 10px;
+}
+
+.dsmetaContainer{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cardContainer{
+    border-radius: 10px;
+    padding: 30px 10px;
+   background-color: #283142; 
+}
+
+.cardContainer h2{
+    font-size: 24px;
+    color: #676FFF;
+    margin-bottom: 20px;
+}
+
+.dsmetaControl{
+    width: 100%;
+    height: 46px;
+    background-color: #1B2531;
+    border: 1px solid #384459;
+    color: #9AAABE;
+    border-radius: 5px;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+.dsmetaControl{
+    margin-bottom: 16px;
+    max-width: 300px;
+}
+
+.dsmetaFormControl{
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.dsmetaFormControl thead{
+    height: 55px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #E9E9E9;
+}
+
+.dsmetaFormControl tbody{
+ font-size: 14px;
+ font-weight: 400;
+ color: #CFCFCF; 
+ text-align: center;  
+}
+
+.dsmetaFormControl tbody tr{
+    height: 74px;
+   border-top: 1px solid #5F6E82;
+}
+
+.dsmetaFormControl tbody tr:hover > td{
+background-color: #384459;
+}
+
+.dsmetaFormControl tbody tr:nth-child(odd){
+background-color: #242C3B;
+}
+
+.dsmetaBtnForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dsmetaBtn{
+    height: 45px;
+    width: 45px;
+    background-color: rgba(255, 107, 114, 0.1);
+    border: 1px solid #ff6b72;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.dsmetaBtn img{
+    width: 19px;
+}
+
+.show992{
+    display: none;
+}
+
+.show576{
+    display: none;
+}
+
+
+/*Responsividade*/
+@media(min-width: 992px){
+    .show992{
+        display: table-cell;
+    }
+    .cardContainer h2{
+        margin-left: 35px;
+    }
+    .dsmetaControl{
+        margin-left: 35px;
+    }
+}
+
+@media(min-width: 576px){
+   .show576{
+    display: table-cell;
+   } 
+   .cardContainer h2{
+    margin-left: 35px;
+}
+   .dsmetaControl{
+    margin-left: 35px;
+}
+.dsmetaFormControl tbody{
+    font-size: 18px;
+}
+.dsmetaFormControl tbody tr{
+    height: 55px;
+}
+}
+
